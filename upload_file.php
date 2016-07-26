@@ -87,7 +87,8 @@ include('navbar.php');
 					if ($type=="video/mp4" || $type=="video/flv" || $type=="video/webm"){
 						if (isset ($name) && $igual==false) {
 							$location = 'videos\\';
-							if  (move_uploaded_file($tmp_name, "videos\\".$name)){
+
+							if  (move_uploaded_file($tmp_name, "videos\\".$name) || $error==0){
 								date_default_timezone_set("Europe/Lisbon");
 								$datavideo = date('Y-m-d H:i:s');
 								$size = formatSizeUnits($size);
@@ -97,8 +98,7 @@ include('navbar.php');
 								header('Location: listarvideos.php');
 							}
 							else{
-								echo "Houve um erro ao enviar o ficheiro";
-								echo $error;
+								echo "Houve um erro ao enviar o ficheiro<br>Erro ".$error;
 							}
 						}
 						else{
