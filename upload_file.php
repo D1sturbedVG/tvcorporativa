@@ -74,6 +74,7 @@ include('navbar.php');
 					$aceite=0;
 				}
 
+
 				if ($resultado->num_rows > 0) {
 
 					while ($rowcaminho = $resultado->fetch_assoc()){
@@ -81,7 +82,9 @@ include('navbar.php');
 							$igual=true;
 						}
 					}
-					if ($type=="video\mp4" || $type=="video\flv" || $type=="video\webm"){
+				}
+
+					if ($type=="video/mp4" || $type=="video/flv" || $type=="video/webm"){
 						if (isset ($name) && $igual==false) {
 							$location = 'videos\\';
 							if  (move_uploaded_file($tmp_name, "videos\\".$name)){
@@ -109,7 +112,6 @@ include('navbar.php');
 				else{
 					echo utf8_decode("Tem de submeter um ficheiro");
 				}
-			}
 			?>
 		</p>
 	</div>
