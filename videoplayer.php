@@ -48,23 +48,3 @@
             }
           </script>
           <!-- fim script -->
-
-
-
-
-
-      <?php
-      $sql = "SELECT * FROM `tb_videos` ORDER by `id_video` LIMIT 25";
-      $result = $conn->query($sql);
-      if ($result->num_rows > 0) {
-       while ($row = $result->fetch_assoc()) {
-        echo "{
-          file: 'videos/".$row['caminho_video']."',
-          image: 'images/logotipo.png',
-          title: '".$row['legenda_video']."',
-          mediaid: '".$row['id_video']."'
-        },"
-        ;
-      }
-    }
-    ?>

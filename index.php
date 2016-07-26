@@ -90,8 +90,8 @@
                if ($result->num_rows > 0) {
                  while ($row = $result->fetch_assoc()) {
                   echo "{
-                    file: 'videos/".$row['caminho_video']."',
-                    image: 'images/logotipo.png',
+                    file: 'videos\".$row['caminho_video']."',
+                    image: 'images\logotipo.png',
                     title: '".$row['titulo_video']."',
                     mediaid: '".$row['id_video']."'
                   },"
@@ -151,9 +151,6 @@
 
     <div id="noticiaseitv" class="parent-container">
 
-
-
-
       <?php
       $sqlnoticias = "SELECT * FROM `tb_noticias` ORDER BY `tb_noticias`.`data_noticia` DESC LIMIT 3";
       $resultado = $conn2->query($sqlnoticias);
@@ -193,15 +190,6 @@
       </div>
     </div>
   </div>
-</div>
-
-<div id="divnoticiagrande">
-  <div class="progress">
-  <div class="progress-bar progress-bar-striped active" role="progressbar"
-  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-    40%
-  </div>
-</div>
 </div>
 
 
