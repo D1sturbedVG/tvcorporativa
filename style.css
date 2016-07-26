@@ -1,0 +1,203 @@
+.body{
+background: #01376a;
+}
+
+#tabela{
+	width: 80%;
+	margin: auto;
+	border-radius: 20px;
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	border-spacing: 5px;
+}
+.tabelalistar{
+	width: 50%;
+	margin: auto;
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 20px;
+}
+.tabelalistar th{
+	text-align: center;
+	border: none !important;
+}
+.tabelalistar a{
+	color:black;
+}
+.tabelalistar td{
+	border-top:none !important;
+	color: #01376a;
+}
+.tabelalistar h2, ul, th, p{
+	text-align: center;
+	color: #01376a;
+}
+
+#widgetweather{
+	width: 250px;
+	margin: auto;
+}
+
+#widgetnoticias{
+	width: 70%;
+}
+
+#container{
+	margin: auto;
+	background-color: white;
+}
+
+#widgetdata{
+	text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #01376a;
+    font-size: 24px;
+    text-shadow: 1px 1px black;
+    width: 200px;
+    margin: auto;
+}
+
+#logotipo{
+	margin: auto;
+	width: 145px;
+	height: 175px;
+	margin-top: 10px;	
+	margin-bottom: 10px;	
+}
+
+.whitebodycenter{
+	width: 50%;
+	margin: auto;
+	margin-top: 10px;
+	color: #01376a;
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.whitebodycenter h2, h3, ul{
+	text-align: center;
+}
+.whiteformcenter{
+	width: 70%;
+	margin: auto;
+	margin-top: 10px;
+	color: #01376a;
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.whiteformcenter h2, ul{
+	text-align: center;
+}
+
+#links{
+	margin: auto;
+	text-align: center;
+}
+
+/* Inicio custom bootstrap menu */
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(51, 122, 183, 1);
+    border-width: 2px;
+    border-radius: 10px;
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+	transition: all 1s ease 0s;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(51, 122, 183, 1);
+    margin-right: 10px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+	transition: all 0,5s ease 0s;
+    color: rgba(1, 55, 106, 1);
+    background-color: rgba(248, 248, 248, 1);
+    border-radius: 5px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(1, 55, 106, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #000000;
+}
+/* Fim custom bootstrap menu */
+
+.container{
+	margin-top: 5px;
+	width: 80%;
+}
+
+.panel-heading p{
+	color: #ffffff;
+}
+
+.footer{
+	text-align: center;
+}
+
+.panel-body h4{
+	text-align: center;
+}
+
+#noticiaseitv{
+	text-align: center;
+	color: #01376a;
+	list-style-type: circle;
+	padding-bottom: 10px;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/*the basics, and works for FF*/
+#divnoticiagrande{
+	margin:0px 0px 0px 0px;
+	position:fixed;
+	height: 100%;
+	z-index:9999;
+	padding-top:200px;
+	padding-left:50px;
+	width:100%;
+	clear:none;
+	background:url(/images/fade-out-bg.png);
+	/*background-color:#666666;
+	border:1px solid #000000;*/
+	}
