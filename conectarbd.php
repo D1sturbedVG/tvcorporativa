@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "root";
+$username = "eitv";
 $password = "12345";
 $dbname = "bdeitv";
 // Create connection
