@@ -83,8 +83,8 @@ include('navbar.php');
 					}
 					if ($type=="video\mp4" || $type=="video\flv" || $type=="video\webm"){
 						if (isset ($name) && $igual==false) {
-							$location = 'videos\';
-							if  (move_uploaded_file($tmp_name, "videos\".$name)){
+							$location = 'videos\\';
+							if  (move_uploaded_file($tmp_name, "videos\\".$name)){
 								date_default_timezone_set("Europe/Lisbon");
 								$datavideo = date('Y-m-d H:i:s');
 								$size = formatSizeUnits($size);

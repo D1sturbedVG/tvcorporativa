@@ -18,8 +18,8 @@
                if ($result->num_rows > 0) {
                  while ($row = $result->fetch_assoc()) {
                   echo "{
-                    file: 'videos\".$row['caminho_video']."',
-                    image: 'images\logotipo.png',
+                    file: 'videos\\".$row['caminho_video']."',
+                    image: 'images\\logotipo.png',
                     title: '".$row['titulo_video']."',
                     mediaid: '".$row['id_video']."'
                   },"
